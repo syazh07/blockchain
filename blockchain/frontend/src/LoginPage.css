@@ -1,0 +1,99 @@
+/* LoginPage.css */
+
+/* Full screen gradient background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+/* Center the container */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Wider, modern container */
+.container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  margin: 15px 0 10px;
+  color: #555;
+}
+
+/* Inputs full width inside container */
+.container input {
+  width: 90%;
+  max-width: 500px;
+  padding: 14px 18px;
+  margin: 0.6rem 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1.05rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.container input:focus {
+  border-color: #9b59b6;
+  box-shadow: 0 0 8px rgba(155, 89, 182, 0.3);
+}
+
+/* Buttons full width */
+.container button {
+  width: 90%;
+  max-width: 500px;
+  padding: 14px;
+  margin-top: 1rem;
+  background-color: #9b59b6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #8e44ad;
+}
+
+/* Paragraphs for info / wallet */
+p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive for mobile */
+@media (max-width: 400px) {
+  .container {
+    padding: 1.5rem 2rem;
+  }
+  .container input, .container button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
